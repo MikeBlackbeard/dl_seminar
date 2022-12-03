@@ -1,0 +1,380 @@
+\documentclass[10pt,journal,compsoc]{IEEEtran}
+
+\ifCLASSOPTIONcompsoc
+  % IEEE Computer Society needs nocompress option
+  % requires cite.sty v4.0 or later (November 2003)
+  \usepackage[nocompress]{cite}
+\else
+  % normal IEEE
+  \usepackage{cite}
+\fi
+
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{amsmath}
+
+\ifCLASSINFOpdf
+
+\else
+
+\fi
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+\hyphenpenalty=100000
+
+\title{High Efficiency Video Coding (H.265)}
+
+
+\author{Miguel~Rodriguez Delgado,~Hochschule Hamm-Lippstadt}
+
+
+\markboth{Audio and Video Technologies, June~2020}%
+{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Computer Society Journals}
+
+\IEEEtitleabstractindextext{%
+\begin{abstract}
+With the new video technologies is necessary to compress a video in order to be able to reproduce it and to store it in our different devices, HEVC H.265 offers a high compression with a better quality than its predecessors. The different algorithms described by this standard include Intra-Frame prediction, which allow to compress each frame inside a video; and Inter-Frame prediction, a function that compress a video in a temporal way, using the information of the adjacent frames. The main functions of HEVC compared with its predecessors, allow H.265 to process video up to 8K, this gives H.265 be the standard for the present and the near future according the new resolution both in the new recording systems, as well as the reproduction devices.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Video codec, HEVC, H.265, encoding.
+\end{IEEEkeywords}}
+
+
+\maketitle
+
+
+\IEEEdisplaynontitleabstractindextext
+
+\IEEEpeerreviewmaketitle
+
+
+
+\IEEEraisesectionheading{\section{Introduction}\label{sec:introduction}}
+
+\IEEEPARstart{N}{owadays} we use videos in almost all moments of our lives, from movies or leisure to educative or enterprise conferences.  Video have become one of the most usable tools that we have to communicate. For this reason, we need to be able to reproduce a video in any device that we have, for example, smart-phones, computers, tablets among others. In order to share videos, is necessary  to be sure that any appliance or gadgets that we have we have, are going to be able to reproduce and store them. However, the size of a one-minute uncompressed video can be up to 234GB of space. Here is where Codecs are important since they are in charge to compress and decompress a video. 
+
+Video compression was first adopted in 1996 with the MPEG-2 standard after that the development of satellite television. The next standard, MPEG-4(H.264 or Advanced Video Coding – AVC), was released in 2003, and provided twice data compression. With this standard was possible video streaming, and the develop of new video communication services. In 2013 were released two new video coding standards, H.265 (High Efficiency Video Coding - HEVC), and VP9 developed by Google. \cite{simple}
+
+Through this paper we will understand what a Codec is and what is the difference between the new High Efficiency Video Coding (H.265) and its predecessors. In order to completely understand HEVC it is necessary to first understand what a codec is.    
+
+\section{Codecs and Containers}
+
+The word Code is made up of the combination of two words: Coding and decoding. A codec is either a software or a hardware or, in other cases such in a DVD player or a video camera, a combination hardware-software. The main function of a codec is to compress a file to allow us to store it or transmit it (codify) and decompress the file when we need to edit it or reproduce it (de-codify). We have two main kinds of codecs: audio and video codecs. The most common video codec is H.264 or MPEG-4 (Moving Picture Experts Group). Nevertheless, the new H.265 represents the present and the future of video coding. \cite{codec}
+
+Another important feature are containers. After a file has been compressed it muss be packed in a file format. The most common packaging formats are .mp4, .mov, .avi and .wmv. These files will contain the audio and video codecs, the closed captions, and the related metadata.  Different containers have the advantage to support multiple types of codecs, both for audio and video. However, even though a .mov file and a .mwv file can have the same metadata and the same codecs, they have been generated for different players: .mov for Mac’s QuickTime, and .mwv for Windows’ Windows Media Player. \cite{encoding}
+
+To better understand the difference between a codec and a container we can compare it with a moving to another house. If a person wants to move his bed, furniture, and appliances, It would be necessary to disassembled everything in order to can transport it, this would be the task of the codec, and then the moving track can represent the container who is going to transport the belongings to the new house, where everything it will be reassembled. 
+
+\section{High Efficiency Video Coding (H.265)}
+
+H.265 or High Efficiency Video Coding (HEVC) is a new coding format developed by Joint Collaborative Team on Video Coding (JCT-VC), a team that brings together experts in audio and video coding from all the world. HEVC Was released on 2013, approved by two societies: ITU-T Study Group 16 – Video Coding Experts Group (VCEG) who publics H-265 as ITU-T H.265; and ISO/IEC JTC 1/SC 29/WG 11 Motion Picture Experts Group (MPEG) who publics HEVC as ISO/IEC 23008-2, as a new guideline that defines the new formats to compress video, and that provides a higher quality with the same bit rate. H.265 was developed with the goal of get double efficiency on video coding, related with its predecessor H.264. Compared with H.264, with the same video quality, H.265 allow us to compress a video to near half of the size or half of the bit rate than its predecessor. On the other hand, with the same bit rate or the same size, HEVC give us a better video quality. \cite{queesh265}. While the maximum resolution of its predecessor H.264 is 4K(3840 x 2160 pixels), H.265 has the ability to encode the new resolutions up to 8K (7680 x 4320 pixels). \cite{estudio} This is very important with the development of new technologies in all the fields that depend on video.
+
+
+\section{Video coding}
+
+HEVC relies in hybrid system, this means that compression is done both in a temporal and a spatial way. This is done by looking for redundancies in each frame of the video in a spatial way. In this case, each one of the frames is divided into blocks and then are applied different algorithms in order to look for redundancies, this is called intra-frame prediction. The second technique is called inter-frame prediction. Adjacent frames are likely to be similar one to another, and with this temporal process, redundancies in consecutive frames can be eliminated. Lets now consider in detail each one of these methods and algorithms. \cite{simple}
+
+
+\subsection{Intra-Frame Prediction}
+
+Intra-frame prediction works in a spatial mode. In this case, the information of each frame is analysed to eliminate any redundancies that can be found. This is made in a Block-by-block basis. To perform this process, H.265 employs several algorithms to create different blocks from the Smallest Coding Unit (SCU) of 8x8 pixels, to the Largest Coding Unit (LCU) with a size of 64x64 pixels.\cite{fasthevc} The LCU is defined by the encoding system before the coding starts. After the process starts, each one of these blocks can be divided into 4 equal squares or sub-blocks, these divisions are called Coding Units (CU) and these can also be divided in 4 equal squares. This partition is implemented consecutively. Each division is called a Prediction Unit (PU). The maximum size of a PU is 32x32 pixels, thus, a 64x64 LCU contains 4 32x32 PUs; and a 8x8 SCU contains 4 4x4 PUs. Each PU is assigned a number starting from 0 going from left to right and up to down \cite{simple} how is showed in Figure \ref{fig:LCU}. 
+
+
+\begin{figure}[h]
+\includegraphics[scale=0.72]{intrafra}
+\caption{Example of a LCU 64x64 with subdivision (the numbers outside the blocks show the amount of pixels and the numbers inside show the order in the coding process}
+\label{fig:LCU}
+\end{figure}
+
+
+In order to decide the size of a PU and to eliminate redundancies, the code looks for areas with the same characteristics, this would be represented in similar colors and textures (Figure \ref{fig:sun}, \ref{fig:puej1} and \ref{fig:puej2}). After this process, different algorithms can be used to compress the PU, for instance the Discrete Cosine Transform (DCT) or the Inverse  Discrete  Cosine  Transform (IDCT) \cite{cosine}. However, in the case of 4x4 PUs the algorithm uses Discrete Sine Transform (DST) since there are evidence of a better compression with this different process. \cite{tech}
+
+\begin{figure}[h!]
+\includegraphics[scale=0.45]{sun}
+\caption{Our perspective of a compressed image \cite{sunset}} 
+\label{fig:sun}
+\end{figure}
+
+\begin{figure}[h!]
+\includegraphics[scale=0.44]{puexample}
+\caption{zoomed image. In this example we can appreciate the PUs on a image on a section of Figure \ref{fig:sun}}
+\label{fig:puej1}
+\end{figure}
+
+\begin{figure}[h!]
+\includegraphics[scale=0.44]{puexample2}
+\caption{Example of PUs in Figure \ref{fig:puej1}}
+\label{fig:puej2}
+\end{figure}
+
+
+
+
+A pixel in an uncompressed image cam be represented as color and the saturation, that can be represented with a percentage from 0\% to 100\%. \cite{color}. In case we need to store a single uncompressed frame, each pixel is going to be assigned with a value and it is going to be stored. Analysing only one PU of 32x32 for example, it is necessary to store 1024 values. However, HEVC intra-frame algorithm can represent the same 32x32 PU with only few numbers.
+
+To understand easily how this algorithms work, its better work with a gray scale image. For example the image on figure \ref{fig:sun} DCT algorithm assigns each pixel with a value between 0 and 99 depending on the color. For example, if the pixel is completely white, the assigned value will be 0; if the pixel is completely black, the value will be 100; any other color on the gray scale will receive a number depending on its darkness or lightness. \cite{jpeg} 
+
+
+
+For example, a sequence of PU can be represented for a series of numbers as in \eqref{eq:1}
+
+\begin{equation}
+ 72-70-65-65-66-68-72-75-80-84-84-89\label{eq:1}
+\end{equation}
+\cite{jpeg}
+ 
+
+To better understand the process the values in (1) can be plotted in a graph. This graph is represented in Figure \ref{fig:graph1}.
+
+
+\begin{figure}[h]
+\includegraphics[scale=0.62]{graph1}
+\caption{Representation of a graph with the values of \eqref{eq:1}}
+\label{fig:graph1}
+\end{figure}
+
+On the other hand, Fourier series yields that any periodic function or an interval in a function can be represented by:
+
+\begin{equation}
+f(t)={a_0\over2}+\sum_{n=1}^\infty ~a_n \cos\left({2\pi n t\over L}\right)+\sum_{n=1}^\infty ~b_n \sin\left({2\pi n t\over L}\right)\label{eq:furier}
+\end{equation}
+
+According \cite{jpeg} we can use the next values for $a_n$, and for the functions $cos(x)$ and $ sin(x)$:
+
+\begin{equation}
+f(x)=74+3\cos(x)-10sin(x)\label{eq:furier2}
+\end{equation}
+
+
+When plotting the graph in Figure \ref{fig:graph1} along with the function \eqref{eq:furier2}, the results are the ones that shows Figure \ref{fig:graph2}
+
+\begin{figure}[h!]
+\includegraphics[scale=0.58]{graph}
+\caption{Discrete Cosine Transformation of values in \eqref{eq:1}. This image shows the values of $f(x)=cos(x)$, $f(x)=3cos(x)$, $f(x)=10sin(x)$, and $f(x)=74+3\cos(x)-10sin(x)$ compared with the graphic showed in Figure \eqref{eq:1}}.
+\label{fig:graph2}
+\end{figure}
+
+
+In this example, to store the data in Figure \ref{fig:graph1} it would be necessary to store 12 different values. But after applying DCT it would be necessary only to store 3 values:
+
+\begin{equation}
+ 74, 3, -10\label{eq:3}
+\end{equation}
+
+At this point and for this example, the data on \eqref{eq:3} is a good representation of \eqref{eq:1}, and DCT has reduced the required storage space in 75\%. 
+
+
+\begin{figure}[h!]
+\includegraphics[scale=0.55]{prediclines}
+\caption{Angular modes lines of prediction \cite{accel}}
+\label{fig:pred1}
+\end{figure}
+
+As stated before, a PU is a block that goes from 4x4 to 32x32. The previous example showed how a line is compressed. DCT algorithm applies Fourier transformation to both the first line and the first column of each block. HEVC H.265 algorithm allows prediction in 35 different directions as showed in Figure \ref{fig:pred1}. This prediction lines are defined by the matrix between the first line and the first column of the block as showed in figure \ref{fig:pred2}. HEVC uses a planar mode and a DC mode to predict each block. The DC mode uses the average value of the pixels of the first line and first column of the block that is going to be predicted, while the planar mode predict the texture of the block in a more efficient way. Planar mode provides the frame with a better continuity and a smoother texture. \cite{modes}
+
+
+
+\begin{figure}[h]
+\includegraphics[scale=0.55]{prediction}
+\caption{Angular modes inside a coded block \cite{inter}}
+\label{fig:pred2}
+\end{figure}
+
+After CDT, H,265 will generate a frame that is composed by blocks of different sizes, and with the 35 different angular directions, the approximate image will look identical to the original one but using a smaller size.
+
+But the only way to compress an image is not inside each frame, but also eliminating redundancies in consecutive frames. This process, as stated before, is called Inter-frame Prediction.
+
+\subsection{Inter-frame Prediction}
+
+Redundancies in video can be eliminated not only inside each frame, but also between consecutive frames. There is a great possibility that consecutive images share many details. HEVC search in the previous encoded images to find the similar areas or block in order to eliminate temporal redundancies. \cite{simple} Inter-Frame prediction is based in Motion Estimation (ME), and Motion Compensation (MC). \cite{inter}
+
+Motion Estimation searches for PUs in the previous or the future fames. Consecutive frames may be similar, and the only information that is necessary to save is the one regarding these differences. It can also exist the case that two consecutive frames have no differences. In this case the encoder only needs to save the information necessary to reconstruct the previous frame. When there is movement in the picture is less easy for the encoder to find the correct information to encode the video. \cite{marshal}
+
+To find the best match the algorithm subtracts the predicted frame from the desired frame. The result of the subtraction is called residual error, the more accurate the prediction, the more the residual error approaches to zero, and the better the coding efficiency. The less accurate, the more the residual error. This residual error has to be encoded, but the encoded will be more efficiently than before of the estimation. \cite{marshal}  After finding the best match Motion Estimation, the movement of the PU is generated as vectors that are going to contain the information of the direction and the length of the PU. \cite{inter}
+
+
+\begin{figure}[h]
+\includegraphics[scale=0.9]{motion}
+\caption{Motion Estimation, \cite{motion}}
+\label{fig:motion}
+\end{figure}
+
+In figure \ref{fig:sim} \cite{imgcomp} is possible to appreciate how this vectors would look like. The first image represents a frame, the second image represents the next frame, and the third image contains points that represents the frames that are can be copied to the next frame, the arrows int the third image represent the vectors with the direction and the distance that the PUs have to move, and the last image shows the prediction error. \cite{imageproc}
+
+
+
+\begin{figure}[h]
+\includegraphics[scale=0.53]{motcomp}
+\caption{Example of motion vectors in consecutive frame. \cite{imgcomp}}
+\label{fig:sim}
+\end{figure}
+
+Motion Compensation is performed by the decoder with the information of the vectors. ME reconstructs the video sequence using the motion vectors to generate the new frame, and the compensation error to correct the residual signal. To reduce the impact of the error its possible to use methods such us DCT, but this process is not as effective as having perfect prediction images. \cite{imageproc}
+
+H.265 performs also Uni- and Bi-prediction. Uni-prediction is based in one single reference frame, while Bi-prediction is able to take reference from two different frames. \cite{imageproc}
+
+
+
+\section{Disadvantages of H.265}
+Up to now we have seen all the advantages of using HEVC but everything has a negative side. First, the patents in the algorithms. For this reason many companies hesitate to use H.265. \cite{disadv} Another disadvantage is the CPU power consumption, because of the high amount of algorithms, depending on the processor, it will take a long time to compress a video using HEVC. \cite{algor}
+
+
+
+
+\section{Conclusion}
+
+To summarize, HEVC offers different algorithms to compress a video in two different ways: temporal and spatial. The ability to process LPUs up to 64x64 pixels, and the different modes of compression in the Intra-Frame Prediction mode, along with the ability to predict the movement in consecutive different frames with the Inter-Frame Prediction, allows H.265 to provide a high factor of compression that is required nowadays for the storage and the streaming of audiovisual content even in 8K.
+
+Even though there are some disadvantages, nowadays is the most used standard coding due to the efficiency in both compression and image quality.
+
+
+
+
+
+% if have a single appendix:
+%\appendix[Proof of the Zonklar Equations]
+% or
+%\appendix  % for no appendix heading
+% do not use \section anymore after \appendix, only \section*
+% is possibly needed
+
+% use appendices with more than one appendix
+% then use \section to start each appendix
+% you must declare a \section before using any
+% \subsection or using \label (\appendices by itself
+% starts a section numbered zero.)
+%
+
+
+
+% Can use something like this to put references on a page
+% by themselves when using endfloat and the captionsoff option.
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+
+\bibliographystyle{IEEEtran}
+
+\begin{thebibliography}{9}
+
+\bibitem{simple} 
+Oleg Ponomarev. 
+\textit{Video encoding in simple terms}. 
+https://www.elecard.com/page/video\_encoding\_in\_simple\_terms 2020.
+
+
+\bibitem{codec} 
+Angel Aller. 
+\textit{Qué es un CODEC y para qué sirve}. 
+
+https://www.profesionalreview.com/2020/02/15/que-es-codec/ 2020.
+
+
+\bibitem{encoding} 
+Ruether Traci. 
+\textit{Video Codecs and Encoding: Everything You Should Know (Update)}
+   
+https://www.wowza.com/blog/video-codecs-encoding 2019.
+
+\bibitem{queesh265} 
+Oscar F. 
+\textit{¿Qué es HEVC / H265?}. 
+
+https://www.videodepot.com.mx/staff/que-es-hevc-h-265/ 2015.
+
+
+\bibitem{estudio}
+Hernández Morales, Carlos. 
+\textit{Estudio comparativo de los códec H.264 y H.265 basado en métricas objetivas de calidad de video.} (2019).
+
+
+\bibitem{fasthevc}
+
+Lu, Xin and Yu, Chang and Jin, Xuesong,
+\textit{A fast HEVC intra-coding algorithm based on texture homogeneity and spatio-temporal correlation},
+1st edition
+\textit {EURASIP Journal on Advances in Signal Processing},
+2018
+
+\bibitem{tech} 
+Sonnati Fabio.  
+\textit{Video Encoding and Stream Technologies.}. 
+https://sonnati.wordpress.com/2014/06/20/h265-part-i-technical-overview/ 2014.
+
+\bibitem{cosine}
+Ercan Kalali, Ahmet Can Mert, Ilker Hamzaoglu
+\textit{A Computation and Energy Reduction Technique for HEVC Discrete Cosine Transform}. IEEE Transactions on Consumer Electronics, Vol. 62, No. 2. 2016.
+
+
+\bibitem{color}
+WorkWithColor.com. "Color Luminance." Accessed Mai 27, 2020. http://www.workwithcolor.com/color-luminance-2233.htm.
+
+
+\bibitem{jpeg}
+Heyman Randell,
+\textit{How JPEG works}.
+
+https://www.youtube.com/watch?v=f2odrCGjOFY. 2015
+
+
+\bibitem{algor}
+Sze, Vivienne; Budagavi, Madhukar; Sullivan, Gary J.
+\textit{High Efficiency Video Coding (HEVC)}. Algorithms and Architectures, Cham: Springer, 2014
+
+
+\bibitem{accel}
+Thaísa Leal da Silva, Luciano Volcan Agostini, Luis Alberto da Silva Cruz.
+\textit{HEVC intra prediction acceleration based ontexture direction and prediction unit modesreuse}. vol.3, 2014.
+
+
+\bibitem{modes}
+Kanchan, Taru, 
+\textit{Non-MPM Mode Coding for Intra Prediction in Video Coding}. Computer Engineering Master's Theses. 4. 2018
+
+
+\bibitem{sunset}
+https://www.pinterest.at/pin/682576887255351941/
+
+
+\bibitem{inter}
+Jonas Nilson,
+\textit{Inter-Picture Prediction for Video Compression using Low Pass and High Pass Filters,} 2017
+
+\bibitem{motion}
+Mathias Wien.
+\textit{High Efficiency Video Coding. Signals and Communica-tion Technology}. Springer Berlin Heidelberg, Berlin, Heidelberg, 2015.
+
+
+\bibitem{motion_analysis} 
+Motion estimation and analysis.
+
+https://www.iosb.fraunhofer.de/servlet/is/16105/. 2020
+
+\bibitem{marshal}
+Marshall, Dave.
+\textit{Motion Estimation}.
+
+https://users.cs.cf.ac.uk/Dave.Marshall/Multimedia/node259.html. 2001
+ 
+
+\bibitem{imageproc}
+Yao Wang, \textit{Image and Video Processing.} Motion Estimation, Tandon School of Engineering, New York University. 2016
+
+
+\bibitem{imgcomp}
+Bernd Girod: \textit{EE368b Image and Video Compression} https://web.stanford.edu/class/ee368b/Handouts/17-MotionCompensation.pdf
+
+
+\bibitem{disadv}
+Karen Nelson. \textit{All You Need to Know about HEVC/H.265}. https://www.videosolo.com/tutorials/what-is-hevc.html. 2020
+
+\end{thebibliography}
+
+\end{document}
+
+
