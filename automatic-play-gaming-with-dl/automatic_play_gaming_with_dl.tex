@@ -52,7 +52,7 @@ As described on \ref{sec:intro}, AI has been present in games since the earlies 
 
 In the same way, Artificial Intelligence has been used to defeat humans in other games, such as Mahjong and Go \cite{sony}. These kind of games required a lot of computation and learning algorithm, but they have the possibility to take the time to perform all the necessary calculations. But more advance games, such as Sony's Gran Turismo, have an increased difficulty to master the correct algorithm to drive a race car since many decisions have to be made in real time \cite{sony}.
 
-\subsection{Chess}
+\section{Chess}
 
 The British mathematician and computer scientist Alan Turing was one of the scientist that developed the first algorithm for playing chess. The design of the algorithm was made to be run on a computer that did not exist at that time \cite{how}.
 
@@ -70,6 +70,17 @@ According to Claude Shannon there are two main ways of searching on a chess prog
 
 Some of the most important algorithms include Chess Challenger, Chessmaster, IBM’s Deep Blue and Alpha-Beta Pruning, but since they will be let out of the scope of this research to focus on Deep Mind, which uses \textit{Residual Policy and Value Networks} and \textit{Reinforcement Learning}
 
+Deep Mind is an artificial intelligence laboratory that have successfully created an algorithm based on reinforcement learning capable to defeat world champions in games as chess, go and shogi \cite{how}.
+
+The algorithm \textit{Alpha Go} is a neural network that defeated for the fist time a Go's world champion, a game that is significantly more complex than chess. Alpha Go was trained using human data and due to its success, it was object of the award-winning documentary \cite{how}. Alpha Zero, its successor, defeated Alpha Go with a score of 100 - 0 games, but Alpha Zero was trained with no human data a it uses less computational power \cite{how}.
+
+Alpha Zero generalizes a network to play three different games, chess, go and shogi. The Alpha Zero algorithm uses reinforcement learning, a field of deep learning that gives rewards for winning or uses penalties for losing in the environment emphasising self-playing \cite{how}
+
+The foundation of most popular neural networks are the \textit{Residual Networks}. These networks let us decode and encode information in the data. One of the advantages of these structures is that the gradient signal regarding the loss function can travel further, allowing a deeper neural network training \cite{how}. These kind of networks to predict the next move, enhances the future maps, information that can be used to improve the present position and move \cite{how}. Also, another kind of networks, \textit{Policy Networks}, select the best possible network and search deeper through the tree, which added with the Residual network limits the searching space and time \cite{how}
+
+
+
+
 
 \ref{chess:reinforcement}
 
@@ -83,7 +94,7 @@ Some of the most important algorithms include Chess Challenger, Chessmaster, IBM
 
 
 
-\subsection{Racing games}
+\section{Racing games}
 
 Since the introduction of deep learning for racing games, reinforcement learning and supervised learning have been the two principal ways to train a network to learn how to drive a car \cite{racingpdf}.
 

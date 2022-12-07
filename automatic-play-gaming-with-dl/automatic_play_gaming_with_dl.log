@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.10)  7 DEC 2022 10:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.10)  7 DEC 2022 11:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -331,43 +331,43 @@ map}
 <img/deepchess.png, id=12, 513.41812pt x 190.46156pt>
 File: img/deepchess.png Graphic file (type png)
 <use img/deepchess.png>
-Package pdftex.def Info: img/deepchess.png  used on input line 77.
+Package pdftex.def Info: img/deepchess.png  used on input line 88.
 (pdftex.def)             Requested size: 266.97894pt x 99.04056pt.
 
-Overfull \hbox (14.97894pt too wide) in paragraph at lines 77--78
+Overfull \hbox (14.97894pt too wide) in paragraph at lines 88--89
 [][] 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 112
+LaTeX Font Info:    Trying to load font information for U+msa on input line 123
 .
 
 (C:\Users\$FCFJ00-NB0564CH0C6I\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts
 \umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 112
+LaTeX Font Info:    Trying to load font information for U+msb on input line 123
 .
 
 (C:\Users\$FCFJ00-NB0564CH0C6I\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts
 \umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 []\OT1/ptm/m/n/8 How does AI play chess? (2022, Septem-ber). Bael-dung.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 []\OT1/ptm/m/n/8 Mukherjee, S. (2022, Febru-ary 9). Sony's new AI
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 \OT1/ptm/m/n/8 beats hu-mans in Gran Tur-ismo rac-ing game. Reuters.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 \OT1/ptm/m/n/8 https://www.reuters.com/technology/sonys-new-ai-beats-humans-gra
 n-
  []
@@ -387,11 +387,11 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  4161 strings out of 478582
  67058 string characters out of 2837264
- 367528 words of memory out of 3000000
+ 371528 words of memory out of 3000000
  22315 multiletter control sequences out of 15000+600000
  503467 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,8n,62p,577b,298s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 55i,8n,62p,745b,298s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/$FCFJ0
 0-NB0564CH0C6I/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Us
 ers/$FCFJ00-NB0564CH0C6I/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
@@ -400,7 +400,7 @@ nts/type1/urw/times/utmb8a.pfb><C:/Users/$FCFJ00-NB0564CH0C6I/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/$FCFJ00-NB0564CH0C6I/A
 ppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/$FCFJ00
 -NB0564CH0C6I/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on automatic_play_gaming_with_dl.pdf (2 pages, 299395 bytes).
+Output written on automatic_play_gaming_with_dl.pdf (2 pages, 300635 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
