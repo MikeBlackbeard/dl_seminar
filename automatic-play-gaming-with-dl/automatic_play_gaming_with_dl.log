@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.10)  7 DEC 2022 16:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.10)  9 JAN 2023 21:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -249,6 +249,50 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 tcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
+(C:\Users\$FCFJ00-NB0564CH0C6I\AppData\Local\Programs\MiKTeX\tex/latex/caption\
+subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+
+(C:\Users\$FCFJ00-NB0564CH0C6I\AppData\Local\Programs\MiKTeX\tex/latex/caption\
+caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(C:\Users\$FCFJ00-NB0564CH0C6I\AppData\Local\Programs\MiKTeX\tex/latex/caption\
+caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen173
+\captionmargin=\dimen174
+\caption@leftmargin=\dimen175
+\caption@rightmargin=\dimen176
+\caption@width=\dimen177
+\caption@indent=\dimen178
+\caption@parindent=\dimen179
+\caption@hangindent=\dimen180
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace
+ {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptio
+nsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspac
+e \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\nor
+malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
+ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
+ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
+\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
+\fi  on input line 1176.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count282
+\c@continuedfloat=\count283
+)
+\c@subfigure=\count284
+\c@subtable=\count285
+)
 (C:\Users\$FCFJ00-NB0564CH0C6I\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\x
 color.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
@@ -268,45 +312,54 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 )
+(C:\Users\$FCFJ00-NB0564CH0C6I\AppData\Local\Programs\MiKTeX\tex/latex/float\fl
+oat.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count286
+\float@exts=\toks23
+\float@box=\box54
+\@float@everytoks=\toks24
+\@floatcapt=\box55
+)
 (C:\Users\$FCFJ00-NB0564CH0C6I\AppData\Local\Programs\MiKTeX\tex/latex/l3backen
 d\l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count282
-\l__pdf_internal_box=\box54
+\l__color_backend_stack_int=\count287
+\l__pdf_internal_box=\box56
 ) (automatic_play_gaming_with_dl.aux)
 \openout1 = `automatic_play_gaming_with_dl.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 -- Lines per column: 56 (exact).
 
 (C:\Users\$FCFJ00-NB0564CH0C6I\AppData\Local\Programs\MiKTeX\tex/context/base/m
 kii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count283
-\scratchdimen=\dimen173
-\scratchbox=\box55
-\nofMPsegments=\count284
-\nofMParguments=\count285
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count286
-\MPscratchDim=\dimen174
-\MPnumerator=\count287
-\makeMPintoPDFobject=\count288
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count288
+\scratchdimen=\dimen181
+\scratchbox=\box57
+\nofMPsegments=\count289
+\nofMParguments=\count290
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count291
+\MPscratchDim=\dimen182
+\MPnumerator=\count292
+\makeMPintoPDFobject=\count293
+\everyMPtoPDFconversion=\toks26
 )
 (C:\Users\$FCFJ00-NB0564CH0C6I\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf
 -pkg\epstopdf-base.sty
@@ -318,10 +371,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 \epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
 <img/tree.png, id=1, 473.51906pt x 367.3725pt>
 File: img/tree.png Graphic file (type png)
 <use img/tree.png>
-Package pdftex.def Info: img/tree.png  used on input line 64.
+Package pdftex.def Info: img/tree.png  used on input line 68.
 (pdftex.def)             Requested size: 246.23131pt x 191.03479pt.
  [1{C:/Users/$FCFJ00-NB0564CH0C6I/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.
 map}
@@ -331,45 +387,120 @@ map}
 <img/deepchess.png, id=12, 513.41812pt x 190.46156pt>
 File: img/deepchess.png Graphic file (type png)
 <use img/deepchess.png>
-Package pdftex.def Info: img/deepchess.png  used on input line 87.
-(pdftex.def)             Requested size: 266.97894pt x 99.04056pt.
+Package pdftex.def Info: img/deepchess.png  used on input line 88.
+(pdftex.def)             Requested size: 256.70842pt x 95.23053pt.
 
-Overfull \hbox (14.97894pt too wide) in paragraph at lines 87--88
+Overfull \hbox (4.70842pt too wide) in paragraph at lines 88--89
 [][] 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 122
+[2 <./img/deepchess.png>]
+<img/minmax.png, id=17, 373.395pt x 299.61937pt>
+File: img/minmax.png Graphic file (type png)
+<use img/minmax.png>
+Package pdftex.def Info: img/minmax.png  used on input line 127.
+(pdftex.def)             Requested size: 205.36787pt x 164.79115pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 132
 .
 
 (C:\Users\$FCFJ00-NB0564CH0C6I\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts
 \umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 122
+LaTeX Font Info:    Trying to load font information for U+msb on input line 132
 .
 
 (C:\Users\$FCFJ00-NB0564CH0C6I\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts
 \umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+<img/montecarlo.png, id=18, 311.66437pt x 283.81032pt>
+File: img/montecarlo.png Graphic file (type png)
+<use img/montecarlo.png>
+Package pdftex.def Info: img/montecarlo.png  used on input line 144.
+(pdftex.def)             Requested size: 171.41592pt x 156.09615pt.
+ [3 <./img/minmax.png> <./img/montecarlo.png>]
+<img/chess1.png, id=24, 122.70844pt x 119.69719pt>
+File: img/chess1.png Graphic file (type png)
+<use img/chess1.png>
+Package pdftex.def Info: img/chess1.png  used on input line 161.
+(pdftex.def)             Requested size: 67.48984pt x 65.83365pt.
+<img/chess2_1.png, id=25, 158.09062pt x 144.54pt>
+File: img/chess2_1.png Graphic file (type png)
+<use img/chess2_1.png>
+Package pdftex.def Info: img/chess2_1.png  used on input line 172.
+(pdftex.def)             Requested size: 71.1401pt x 65.04239pt.
+<img/chess2_2.png, id=26, 160.34906pt x 144.54pt>
+File: img/chess2_2.png Graphic file (type png)
+<use img/chess2_2.png>
+Package pdftex.def Info: img/chess2_2.png  used on input line 178.
+(pdftex.def)             Requested size: 72.1564pt x 65.04239pt.
+<img/chess2_3.png, id=27, 155.07938pt x 140.77594pt>
+File: img/chess2_3.png Graphic file (type png)
+<use img/chess2_3.png>
+Package pdftex.def Info: img/chess2_3.png  used on input line 184.
+(pdftex.def)             Requested size: 69.78506pt x 63.34857pt.
+<img/chess3_1.png, id=28, 155.07938pt x 141.52875pt>
+File: img/chess3_1.png Graphic file (type png)
+<use img/chess3_1.png>
+Package pdftex.def Info: img/chess3_1.png  used on input line 199.
+(pdftex.def)             Requested size: 69.78506pt x 63.68733pt.
+<img/chess3_2.png, id=29, 151.3153pt x 138.5175pt>
+File: img/chess3_2.png Graphic file (type png)
+<use img/chess3_2.png>
+Package pdftex.def Info: img/chess3_2.png  used on input line 205.
+(pdftex.def)             Requested size: 68.09125pt x 62.33229pt.
+<img/chess3_3.png, id=30, 154.32657pt x 141.52875pt>
+File: img/chess3_3.png Graphic file (type png)
+<use img/chess3_3.png>
+Package pdftex.def Info: img/chess3_3.png  used on input line 211.
+(pdftex.def)             Requested size: 69.4463pt x 63.68733pt.
+<img/chess3_4.png, id=31, 156.585pt x 142.28156pt>
+File: img/chess3_4.png Graphic file (type png)
+<use img/chess3_4.png>
+Package pdftex.def Info: img/chess3_4.png  used on input line 217.
+(pdftex.def)             Requested size: 70.46259pt x 64.0261pt.
+<img/chess4_1.png, id=32, 154.32657pt x 140.77594pt>
+File: img/chess4_1.png Graphic file (type png)
+<use img/chess4_1.png>
+Package pdftex.def Info: img/chess4_1.png  used on input line 231.
+(pdftex.def)             Requested size: 69.4463pt x 63.34857pt.
+<img/chess4_2.png, id=33, 152.82094pt x 142.28156pt>
+File: img/chess4_2.png Graphic file (type png)
+<use img/chess4_2.png>
+Package pdftex.def Info: img/chess4_2.png  used on input line 237.
+(pdftex.def)             Requested size: 68.76877pt x 64.0261pt.
+ [4 <./img/chess1.png> <./img/chess2_1.png> <./img/chess2_2.png> <./img/chess2_
+3.png> <./img/chess3_1.png> <./img/chess3_2.png> <./img/chess3_3.png> <./img/ch
+ess3_4.png> <./img/chess4_1.png> <./img/chess4_2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
 []\OT1/ptm/m/n/8 How does AI play chess? (2022, Septem-ber). Bael-dung.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
 []\OT1/ptm/m/n/8 Mukherjee, S. (2022, Febru-ary 9). Sony's new AI
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
 \OT1/ptm/m/n/8 beats hu-mans in Gran Tur-ismo rac-ing game. Reuters.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
 \OT1/ptm/m/n/8 https://www.reuters.com/technology/sonys-new-ai-beats-humans-gra
 n-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
+[]\OT1/ptm/m/n/8 The Cod-ing Train. (2019, De-cem-ber 11). Cod-ing Chal-lenge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
+\OT1/ptm/m/n/8 154: Tic Tac Toe AI with Min-i-max Al-go-rithm. YouTube.
  []
 
 
@@ -383,26 +514,31 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2 <./img/deepchess.png>] (automatic_play_gaming_with_dl.aux) ) 
+[5
+
+] (automatic_play_gaming_with_dl.aux) ) 
 Here is how much of TeX's memory you used:
- 4161 strings out of 478582
- 67058 string characters out of 2837264
- 371528 words of memory out of 3000000
- 22315 multiletter control sequences out of 15000+600000
- 503467 words of font info for 92 fonts, out of 8000000 for 9000
+ 5773 strings out of 478582
+ 98255 string characters out of 2837264
+ 397371 words of memory out of 3000000
+ 23902 multiletter control sequences out of 15000+600000
+ 505599 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,8n,62p,745b,298s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/$FCFJ0
-0-NB0564CH0C6I/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Us
-ers/$FCFJ00-NB0564CH0C6I/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb><C:/Users/$FCFJ00-NB0564CH0C6I/AppData/Local/Programs/MiKTeX/fo
-nts/type1/urw/times/utmb8a.pfb><C:/Users/$FCFJ00-NB0564CH0C6I/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/$FCFJ00-NB0564CH0C6I/A
-ppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/$FCFJ00
--NB0564CH0C6I/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on automatic_play_gaming_with_dl.pdf (2 pages, 301019 bytes).
+ 67i,9n,77p,1005b,459s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/$FCFJ00-NB0564CH0C6I/AppData/L
+ocal/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/$FCFJ00-NB0564CH0C6I
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Use
+rs/$FCFJ00-NB0564CH0C6I/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb><C:/Users/$FCFJ00-NB0564CH0C6I/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/$FCFJ00-NB0564CH0C6I/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/$FCFJ00-NB0564CH0
+C6I/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/$
+FCFJ00-NB0564CH0C6I/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.
+pfb><C:/Users/$FCFJ00-NB0564CH0C6I/AppData/Local/Programs/MiKTeX/fonts/type1/ur
+w/times/utmri8a.pfb>
+Output written on automatic_play_gaming_with_dl.pdf (5 pages, 743015 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
+ 81 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
